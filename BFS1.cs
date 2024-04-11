@@ -41,7 +41,7 @@ namespace ConsoleApp1
             
             while(myQ.Count != 0)
             {
-                // 큐의 맨 앞의 노드값 저장
+                // 큐의 맨 앞의 노드값 저장(queue에서 제거하지 않고 반환)
                 int node = myQ.Peek();
                 int x = myQ_x.Peek();
                 int y = myQ_y.Peek(); 
@@ -99,7 +99,7 @@ namespace ConsoleApp1
                     }
                 }
 
-                // 연산이 끝난 노드 제거
+                // 연산이 끝난 노드 제거(queue에서 제거하여 반환)
                 myQ.Dequeue();
                 myQ_x.Dequeue();
                 myQ_y.Dequeue();
